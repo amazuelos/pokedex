@@ -1,6 +1,8 @@
 import PokemonRepository from '../infrastructure/PokemonRepository'
 
 export class FetchPokemonUseCase {
+  public id;
+  
   constructor(id: number){
     this.id = id;
   }

@@ -1,6 +1,8 @@
 const API_BASE_URL: string = 'https://pokeapi.co/api/v2';
 
 class ApiService {
+  private baseURL;
+  
   constructor() {
     this.baseURL = API_BASE_URL;
   }
