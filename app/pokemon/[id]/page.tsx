@@ -2,7 +2,7 @@
 import Link from 'next/link';
 import { FetchPokemonUseCase } from '../../../src/application/FecthPokemonUseCase'
 
-const PokemonPage = async ({ params }) => {
+const PokemonPage = async ({ params }: { params: any }) => {
   const pokemon = await new FetchPokemonUseCase(params.id).execute();
   return (
     <div className='flex flex-col items-center w-full gap-4 text-center'>
